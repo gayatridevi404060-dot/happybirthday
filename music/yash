@@ -1,0 +1,4 @@
+<audio id="birthday-music" autoplay loop>
+  <source src="https://cdn.pixabay.com/audio/2022/07/26/audio_124bfa6c6f.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
