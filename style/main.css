@@ -1,292 +1,137 @@
-html {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-}
-
-.song {
-  visibility: hidden;
-}
-
-.container {
-  height: 100vh;
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  visibility: hidden;
-  width: 100vw;
-}
-
-.container > div {
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 20vh;
-}
-
-.one {
-  font-size: 4.5rem;
-}
-
-.two {
-  font-size: 1.2rem;
-  font-weight: lighter;
-}
-
-.three {
-  font-size: 3rem;
-}
-
-.four .text-box {
-  border: 3px solid #aaa;
-  border-radius: 5px;
-  margin: 0 auto;
-  padding: 10px;
-  position: relative;
-  width: 600px;
-}
-
-.text-box p {
-  margin: 0;
-  text-align: left;
-}
-
-.text-box span {
-  visibility: hidden;
-}
-
-.text-box .fake-btn {
-  background-color: rgb(21, 161, 237);
-  border-radius: 3px;
-  bottom: -50px;
-  color: #fff;
-  padding: .5rem 1rem;
-  position: absolute;
-  right: 5px;
-}
-
-.five p {
-  font-size: 2rem;
-  left: 0;
-  position: absolute;
-  right: 0;
-}
-
-.idea-3 strong {
-  border-radius: 3px;
-  display: inline-block;
-  padding: 3px 5px;
-}
-
-.five .idea-5 {
-  font-size: 4rem;
-}
-
-.idea-5 span, .idea-6 span, .wish-hbd span {
-  display: inline-block;
-}
-
-.idea-6 span{
-  font-size: 15rem;
-}
-
-
-.six {
-  position: relative;
-  top: 10vh;
-  z-index: 1;
-}
-
-.six img {
-  display: inline-block;
-  height: 350px;
-  max-width: 100%;
-  /* height: auto; */
-}
-
-.six .hat {
-  left: 41.5%;
-  position: absolute;
-  /* transform: scale(0.1); */
-  top: -35%;
-  width: 80px;
-}
-
-.baloons img {
-  display: inline-block;
-  position: absolute;
-}
-
-.baloons img:nth-child(even) {
-  left: -10%;
-}
-
-.baloons img:nth-child(odd) {
-  right: -10%;
-}
-
-.baloons img:nth-child(3n + 0) {
-  left: 30%;
-}
-
-.seven, .eight {
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  width: 100vw;
-}
-
-.eight svg {
-  left: 0;
-  position: absolute;
-  top: 0;
-  visibility: hidden;
-  width: 25px;
-  z-index: -1;
-}
-
-.eight svg:nth-child(1) {
-  fill: #bd6ecf;
-  left: 5vw;
-  top: 7vh;
-}
-
-.eight svg:nth-child(2) {
-  fill: #7dd175;
-  left: 35vw;
-  top: 23vh;
-}
-
-.eight svg:nth-child(3) {
-  fill: #349d8b;
-  left: 23vw;
-  top: 33vh;
-}
-
-.eight svg:nth-child(4) {
-  fill: #347a9d;
-  left: 57vw;
-  top: 43vh;
-}
-
-.eight svg:nth-child(5) {
-  fill: #c66053;
-  left: 7vw;
-  top: 68vh;
-}
-
-.eight svg:nth-child(6) {
-  fill: #bfaa40;
-  left: 77vw;
-  top: 42vh;
-}
-
-.eight svg:nth-child(7) {
-  fill: #e3bae8;
-  left: 83vw;
-  top: 68vh;
-}
-
-.eight svg:nth-child(8) {
-  fill: #8762cb;
-  left: 37vw;
-  top: 86vh;
-}
-
-.eight svg:nth-child(9) {
-  fill: #9a90da;
-  left: 87vw;
-  top: 94vh;
-}
-
-.wish-hbd {
-  font-size: 3em;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-.wish h5 {
-  font-size: 2rem;
-  font-weight: lighter;
-  margin: 10px 0 0;
-}
-
-.nine p {
-  font-size: 2rem;
-  font-weight: lighter;
-}
-
-#replay {
-  cursor: pointer;
-  z-index: 3;
-}
-
-/* Media Queries */
-@media screen and (max-height: 1000px) {
-  .six .hat {
-    left: 40%;
-  }
-}
-
-@media screen and (max-height: 800px) {
-  .six .hat {
-    left: 37%;
-  }
-}
-
-@media screen and (max-height: 700px) {
-  .six .hat {
-    left: 32%;
-  }
-}
-
-@media screen and (max-height: 850px) and (max-width: 450px) {
-  .six .hat {
-    left: 32%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .container {
-    width: 90%;
-  }
-
-  .four .text-box {
-    width: 90%;
-  }
-
-  .text-box .fake-btn {
-    bottom: -38px;
-    right: 5px;
-  }
-
-  .idea-5 span {
-    display: block;
-  }
-
-  .idea-6 span {
-    font-size: 10rem;
-  }
-
-  .six .hat {
-    /* top: -20px; */
-    width: 50px;
-  }
-
-  .wish-hbd {
-    font-size: 2.2em;
-  }
-
-  .wish h5 {
-    font-size: 1.4rem;
-  }
-
-  .nine p {
-    font-size: 1.5rem;
-    font-weight: lighter;
-  }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday!</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(180deg, #4a90e2 0%, #1e3a5c 100%);
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .message {
+      color: #fff;
+      font-size: 3em;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 10px #222;
+      animation: pop 1s ease;
+    }
+    @keyframes pop {
+      0% { transform: scale(0.2); }
+      80% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+    .cake {
+      position: relative;
+      width: 200px;
+      height: 160px;
+      margin-bottom: 50px;
+    }
+    .cake-base {
+      position: absolute;
+      bottom: 0;
+      width: 200px;
+      height: 100px;
+      background: #fff;
+      border-radius: 0 0 30px 30px;
+      border: 5px solid #d1c8c1;
+      box-shadow: 0 10px 40px #2228;
+    }
+    .cake-top {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 160px;
+      height: 40px;
+      background: #f8bbd0;
+      border-radius: 30px 30px 20px 20px;
+      border: 3px solid #e57373;
+    }
+    .candle {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 12px;
+      height: 40px;
+      background: #ffd54f;
+      border-radius: 4px;
+      border: 2px solid #ffb300;
+      z-index: 2;
+    }
+    .flame {
+      position: absolute;
+      top: -18px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 14px;
+      height: 20px;
+      background: radial-gradient(circle at 7px 9px, #fffde4 40%, #ffc107 100%);
+      border-radius: 50%;
+      opacity: 0.8;
+      animation: flicker 0.5s infinite alternate;
+      z-index: 3;
+    }
+    @keyframes flicker {
+      0% { opacity: 0.9; transform: translateX(-50%) scaleY(1.0);}
+      100% { opacity: 0.7; transform: translateX(-50%) scaleY(1.1);}
+    }
+    .balloon {
+      position: absolute;
+      bottom: 0;
+      width: 50px;
+      height: 70px;
+      border-radius: 30px 30px 30px 30px/40px 40px 30px 30px;
+      background: #42a5f5;
+      border: 2px solid #1976d2;
+      left: 0;
+      animation: float 7s linear infinite;
+      z-index: 1;
+    }
+    .balloon::after {
+      content: '';
+      position: absolute;
+      left: 22px;
+      top: 65px;
+      width: 4px;
+      height: 30px;
+      background: #1976d2;
+      border-radius: 2px;
+    }
+    @keyframes float {
+      0% { transform: translateY(0) scale(1); opacity: 1;}
+      90% { opacity: 1;}
+      100% { transform: translateY(-120vh) scale(1.1); opacity: 0;}
+    }
+  </style>
+</head>
+<body>
+  <div class="message">Happy Birthday, Sister! 🎉</div>
+  <div class="cake">
+    <div class="cake-base"></div>
+    <div class="cake-top"></div>
+    <div class="candle">
+      <div class="flame"></div>
+    </div>
+  </div>
+  <script>
+    // Floating Balloons Generator
+    function createBalloon() {
+      const balloon = document.createElement('div');
+      balloon.classList.add('balloon');
+      balloon.style.left = Math.random() * (window.innerWidth - 60) + 'px';
+      balloon.style.background = 'hsl(' + (200 + Math.random() * 40) + ', 90%, 60%)';
+      balloon.style.animationDuration = (6 + Math.random() * 3) + 's';
+      document.body.appendChild(balloon);
+      setTimeout(() => { balloon.remove(); }, 8000);
+    }
+    setInterval(createBalloon, 600);
+  </script>
+</body>
+</html>
